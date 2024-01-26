@@ -12,16 +12,16 @@ function runInteractiveConsole(hero) {
     y: () => console.log('y'),
   };
 
-  // Какая-то функция.
+  // Какая-то функция
 
   keypress(process.stdin);
   process.stdin.on('keypress', (ch, key) => {
     if (key) {
-      // Вызывает команду, соответствующую нажатой кнопке.
+      // Вызывает команду, соответствующую нажатой кнопке
       if (key.name in keyboard) {
         keyboard[key.name]();
       }
-      // Прерывание программы.
+      // Прерывание программы
       if (key.ctrl && key.name === 'c') {
         process.exit();
       }
