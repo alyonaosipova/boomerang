@@ -4,24 +4,25 @@
 
 class Boomerang {
   constructor() {
-    this.skin = "🌀";
+    this.skin = "🍺";
     this.position = 1;
   }
 
   fly() {
     this.moveRight();
+    setTimeout(() => {
+      this.moveLeft();
+    }, 500);
   }
 
   moveLeft() {
-    setInterval(() => {
-      this.position -= 1;
-    }, 100);
+    // Идём влево.
+    this.position = 1;
   }
 
   moveRight() {
-    setInterval(() => {
-      this.position += 1;
-    }, 100);
+    // Идём вправо.
+    this.position += 1;
   }
 }
 
