@@ -1,6 +1,5 @@
 const keypress = require('keypress');
 
-// Управление.
 // Настроим соответствия нажатий на клавиши и действий в игре.
 
 function runInteractiveConsole(hero) {
