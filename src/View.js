@@ -4,13 +4,14 @@ class View {
   constructor(game) {
     this.game = game;
   }
+
   render(track) {
-    const yourTeamName = "Elbrus";
+    const yourTeamName = 'Elbrus';
 
     // Тут всё рисуем.
     console.clear();
-    console.log(track.join(""));
-    console.log("\n\n");
+    console.log(track.join(''));
+    console.log('\n\n');
     console.log(`Created by "${yourTeamName}" with love`);
   }
 }
